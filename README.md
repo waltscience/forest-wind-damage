@@ -7,10 +7,10 @@
  2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
 <br>
 
-### Description
+## Description
 ***
 
-#### Analysis
+### Analysis
 ba.csv and damage.csv are the datasheets corresponding to the 2009 forest inventory
 and the 2011 forest damage assessment in the LTSP experiment. These datasheets are run 
 through the analysis pipeline Data_prep.R to create the analysisdata.csv datasheet that is
@@ -27,7 +27,7 @@ empirical means are compared to the boostrapped mean distributions to calculate 
 
 A detailed explanation of the analysis methods is available in the forthcoming paper. *A link to the paper will be placed here once it is published*. 
 
-#### Data
+### Data
 There are three datasheets in this repository - ba.csv, damage.csv, and analysisdata.csv.
 ba.csv is the data from the 2009 forest inventory in the LTSP (Fowler et al. 2014). 
 damage.csv is the data from the 2011 damage survey in the LTSP. And analysisdata.csv is 
@@ -117,16 +117,16 @@ pctlitubadam - percentage of lituba damaged in square [float]<br>
 pctprsebadam - percentage of prseba damaged in square [float]<br>
 pctbelebadam - percentage of beleba damaged in square [float]<br>
 
-#### Field sampling protocol
+### Field sampling protocol
 
 Additional details and schematics of the field sampling of the forest survey and damage assessment are included in the MS Excel file field_sampling_protocol.xlsx. The file included graphical layouts of the blocks, plots, and squares and details the measurements taken during sampling. 
 
 <br>
 
-### License
+## License
 ***
 
-#### MIT License
+### MIT License
 
 Copyright (c) 2021 Chris Walter
 
