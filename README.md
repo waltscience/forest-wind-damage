@@ -1,6 +1,8 @@
 # forest-wind-damage
 ### This repository contains the data and analysis for the paper *Nitrogen fertilization increases windstorm damage in an aggrading forest* by Walter et al., in review in the journal *Forests*.
 
+This dataset is archived, accessible, and citeable with a DOI at [Zenodo](https://doi.org/10.5281/zenodo.4487873)
+
 **The analysis follows a two-step process**:
  1. Prepare data using ba.csv and damage.csv in the script Data_prep.R
  2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
