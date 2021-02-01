@@ -32,10 +32,7 @@ damage.csv is the data from the 2011 damage survey in the LTSP. And analysisdata
 analysis product of both ba.csv and damage.csv, data for the percentage of trees 
 (basal area or stems) damaged. The attributes are explained as follows:
 
-**ba.csv**:
-
-<br>
-
+**ba.csv**:<br>
 block - LTSP block number [integer]
 trmt - LTSP treatment name [string]
 plot - LTSP plot number [integer]
