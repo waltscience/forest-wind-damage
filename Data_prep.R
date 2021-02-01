@@ -179,43 +179,43 @@ write.csv(analysisdata, "analysisdata.csv", row.names = FALSE)
 
 
 
-# calculate species composition from 2009 composition survey
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# sum basal area by species and square
-baspsq <- aggregate(ba_m2 ~ uniq_square + spp, data = ba, FUN = sum)
-baspsq <- merge(baspsq, basq, by.x = "uniq_square", by.y = "Group.1")
-colnames(baspsq)[4] <- "totalba"
-baspsq$pctbaspp <- (baspsq$ba_m2 / baspsq$totalba) * 100
-
-# include species with 0 ba
-allspp <- expand.grid(unique(baspsq$uniq_square), unique(baspsq$spp))
-colnames(allspp) <- c("uniq_square", "spp")
-allspp <- full_join(allspp, baspsq, by = c("uniq_square", "spp"))
-allspp[is.na(allspp)] <- 0
-
-# sum stems by species and square
-sppstems <- data.frame(table(ba$uniq_square, ba$spp))
-colnames(sppstems) <- c("uniq_square", "spp", "sppstems")
-colnames(totstem) <- c("uniq_square", "totalstems")
-sppstems <- merge(sppstems, totstem, by = "uniq_square")
-sppstems$pctstemspp <- (sppstems$sppstems / sppstems$totalstems) * 100
-
-# merge stems and ba data
-composition <- full_join(allspp, sppstems, by = c("uniq_square", "spp"))
-
-# write all composition data to file
-#write.csv(composition, "compositiondata.csv", row.names = FALSE)
-# added treatment labels in excel outside R
-
-# read composition data
-#comp <- read.csv("compositiondata.csv", header = TRUE)
-
-# calculate mean percent ba and stems in each square for each species
-#sppba <- aggregate(pctbaspp ~ trmt_spp, data = comp, FUN = mean)
-#sppst <- aggregate(pctstemspp ~ trmt_spp, data = comp, FUN = mean)
-#meancomp <- merge(sppba, sppst, by = "trmt_spp")
-#write.csv(meancomp, "meancomposition.csv", row.names = FALSE)
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# # calculate species composition from 2009 composition survey
+# # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# # sum basal area by species and square
+# baspsq <- aggregate(ba_m2 ~ uniq_square + spp, data = ba, FUN = sum)
+# baspsq <- merge(baspsq, basq, by.x = "uniq_square", by.y = "Group.1")
+# colnames(baspsq)[4] <- "totalba"
+# baspsq$pctbaspp <- (baspsq$ba_m2 / baspsq$totalba) * 100
+# 
+# # include species with 0 ba
+# allspp <- expand.grid(unique(baspsq$uniq_square), unique(baspsq$spp))
+# colnames(allspp) <- c("uniq_square", "spp")
+# allspp <- full_join(allspp, baspsq, by = c("uniq_square", "spp"))
+# allspp[is.na(allspp)] <- 0
+# 
+# # sum stems by species and square
+# sppstems <- data.frame(table(ba$uniq_square, ba$spp))
+# colnames(sppstems) <- c("uniq_square", "spp", "sppstems")
+# colnames(totstem) <- c("uniq_square", "totalstems")
+# sppstems <- merge(sppstems, totstem, by = "uniq_square")
+# sppstems$pctstemspp <- (sppstems$sppstems / sppstems$totalstems) * 100
+# 
+# # merge stems and ba data
+# composition <- full_join(allspp, sppstems, by = c("uniq_square", "spp"))
+# 
+# # write all composition data to file
+# write.csv(composition, "compositiondata.csv", row.names = FALSE)
+# # added treatment labels in excel outside R
+# 
+# # read composition data
+# comp <- read.csv("compositiondata.csv", header = TRUE)
+# 
+# # calculate mean percent ba and stems in each square for each species
+# sppba <- aggregate(pctbaspp ~ trmt_spp, data = comp, FUN = mean)
+# sppst <- aggregate(pctstemspp ~ trmt_spp, data = comp, FUN = mean)
+# meancomp <- merge(sppba, sppst, by = "trmt_spp")
+# write.csv(meancomp, "meancomposition.csv", row.names = FALSE)
+# # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
