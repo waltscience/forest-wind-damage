@@ -1,9 +1,11 @@
 # forest-wind-damage
 ### This repository contains the data and analysis for the paper *Nitrogen fertilization increases windstorm damage in an aggrading forest* by Walter et al., in review in the Journal *Forests*.
 
-The analysis follows a two-step process
-	1) Prepare data using ba.csv and damage.csv in the script Data_prep.R
-	2) Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
+The analysis follows a two-step process"
+ 1. Prepare data using ba.csv and damage.csv in the script Data_prep.R
+ 2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
+
+<br>
 
 ### Detailed description
 
@@ -23,7 +25,7 @@ treatments, and create bootstrapped mean distributions using an 50,000 random sa
 empirical means are compared to the boostrapped mean distributions to calculate p-values.
 
 
-####Data
+#### Data
 There are three datasheets in this repository - ba.csv, damage.csv, and analysisdata.csv.
 ba.csv is the data from the 2009 forest inventory in the LTSP (Fowler et al. 2014). 
 damage.csv is the data from the 2011 damage survey in the LTSP. And analysisdata.csv is 
@@ -31,6 +33,9 @@ analysis product of both ba.csv and damage.csv, data for the percentage of trees
 (basal area or stems) damaged. The attributes are explained as follows:
 
 **ba.csv**:
+
+<br>
+
 block - LTSP block number [integer]
 trmt - LTSP treatment name [string]
 plot - LTSP plot number [integer]
@@ -49,6 +54,9 @@ uniq_square - concatenation of block|plot|square|trmt [string]
 uniq_plot - concatenation of block|plot|trmt [string]
  
 **damage.csv**:
+
+<br>
+
 block - LTSP block number [integer]
 plot - LTSP plot number [integer]
 square - subunit of plot [integer]
@@ -65,6 +73,9 @@ uniq_square - concatenation of block|plot|square|trmt [string]
 uniq_plot - concatenation of block|plot|trmt [string]
 
 **analysisdata.csv**:
+
+<br>
+
 trmt - LTSP treatment name [string]
 uniq_square - concatenation of block|plot|square|trmt [string]
 totalba - total basal area in square meters of the square [float]
