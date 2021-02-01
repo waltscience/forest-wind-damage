@@ -33,89 +33,84 @@ analysis product of both ba.csv and damage.csv, data for the percentage of trees
 (basal area or stems) damaged. The attributes are explained as follows:
 
 **ba.csv**:<br>
-block - LTSP block number [integer]
-trmt - LTSP treatment name [string]
-plot - LTSP plot number [integer]
-square - subunit of plot [integer]
-area_m2 - area of square in square meters [float]
-area_ha - area of square in ha [float]
-date - date square was sampled [date]
-spp - species four-letter code [string]
-tree - individual tree number [integer]
-branch - individual branch of individual tree number [integer]
-status - tree mortality status; L = live, D = Dead [binary string]
-dbh_cm - tree / branch diameter at breast height in centimeters [float]
-ba_m2 - tree / branch diameter at breast height in meters [float]
-baperham2 - basal area per hectare in square meters [float]
-uniq_square - concatenation of block|plot|square|trmt [string]
-uniq_plot - concatenation of block|plot|trmt [string]
+block - LTSP block number [integer]<br>
+trmt - LTSP treatment name [string]<br>
+plot - LTSP plot number [integer]<br>
+square - subunit of plot [integer]<br>
+area_m2 - area of square in square meters [float]<br>
+area_ha - area of square in ha [float]<br>
+date - date square was sampled [date]<br>
+spp - species four-letter code [string]<br>
+tree - individual tree number [integer]<br>
+branch - individual branch of individual tree number [integer]<br>
+status - tree mortality status; L = live, D = Dead [binary string]<br>
+dbh_cm - tree / branch diameter at breast height in centimeters [float]<br>
+ba_m2 - tree / branch diameter at breast height in meters [float]<br>
+baperham2 - basal area per hectare in square meters [float]<br>
+uniq_square - concatenation of block|plot|square|trmt [string]<br>
+uniq_plot - concatenation of block|plot|trmt [string]<br>
  
-**damage.csv**:
-
-<br>
-
-block - LTSP block number [integer]
-plot - LTSP plot number [integer]
-square - subunit of plot [integer]
-spp - species four-letter code [string]
-status - tree mortality status; L = live, D = Dead [binary string]
-damagetype - damage type designation; B = bent, T = tipup, S = snap [string]
-degree - damage degree; M = moderate, S = significant, E = extensive, P = prostrate [string]
-damagecat - concatenation of damagetype and degree [string]
-damagecont - arbitrarily designated ordinal scale of damagecat [integer]
-dbh_cm - tree / branch diameter at breast height in centimeters [float]
-ba_m2 - tree / branch diameter at breast height in meters [float]
-trmt - LTSP treatment name [string]
-uniq_square - concatenation of block|plot|square|trmt [string]
-uniq_plot - concatenation of block|plot|trmt [string]
+**damage.csv**:<br>
+block - LTSP block number [integer]<br>
+plot - LTSP plot number [integer]<br>
+square - subunit of plot [integer]<br>
+spp - species four-letter code [string]<br>
+status - tree mortality status; L = live, D = Dead [binary string]<br>
+damagetype - damage type designation; B = bent, T = tipup, S = snap [string]<br>
+degree - damage degree; M = moderate, S = significant, E = extensive, P = prostrate [string]<br>
+damagecat - concatenation of damagetype and degree [string]<br>
+damagecont - arbitrarily designated ordinal scale of damagecat [integer]<br>
+dbh_cm - tree / branch diameter at breast height in centimeters [float]<br>
+ba_m2 - tree / branch diameter at breast height in meters [float]<br>
+trmt - LTSP treatment name [string]<br>
+uniq_square - concatenation of block|plot|square|trmt [string]<br>
+uniq_plot - concatenation of block|plot|trmt [string]<br>
 
 **analysisdata.csv**:
-
 <br>
-
-trmt - LTSP treatment name [string]
-uniq_square - concatenation of block|plot|square|trmt [string]
-totalba - total basal area in square meters of the square [float]
-damageba - damaged ba in square meters of the square [float]
-pctbadam - percentage of the totalba damaged [float]
-totstems - total number of stems in the square [integer]
-damstems - number of damages stems in the square [integer]
-pctstemdam - percentage of totstems damaged in the square [float]
-sumbent - sum of bent stems in the square [integer]
-sumsnap - sum of snap stems in the square [integer]
-sumtipup - sum of tiput stems in the square [integer]
-pctbent - percentage of damaged stems of damage type bent in the square [float]
-pctsnap - percentage of damaged stems of damage type snap in the square [float]
-pcttipup - percentage of damaged stems of damage type tipup in the square [float]
-sumseverE - sum of stems of damage severity class E (Extensive) in square [integer]
-sumseverM - sum of stems of damage severity class M (Moderate) in square [integer]
-sumseverP - sum of stems of damage severity class P (Prostrate) in square [integer]
-sumseverS - sum of stems of damage severity class S (Severe) in square [integer]
-pctseverE - percentage of damaged stems of damage severity class E (Extensive) in square [float]
-pctseverM - percentage of damaged stems of damage severity class M (Moderate) in square [float]
-pctseverP - percentage of damaged stems of damage severity class P (Prostrate) in square [float]
-pctseverS - percentage of damaged stems of damage severity class S (Severe) in square [float]
-prpestemdam - sum of prpe stems damaged in square [integer]
-litustemdam - sum of litu stems damaged in square [integer]
-prsestemdam - sum of prse stems damaged in square [integer]
-belestemdam - sum of bele stems damaged in square [integer]
-prpestem - sum of prpe stems in square [integer]
-litustem - sum of litu stems in square [integer]
-prsestem - sum of prse stems in square [integer]
-belestem - sum of bele stems in square [integer]
-pctprpedam - percentage of prpestem damaged in square [float]
-pctlitudam - percentage of litustem damaged in square [float]
-pctprsedam - percentage of prsestem damaged in square [float]
-pctbeledam - percentage of belestem damaged in square [floatr]
-prpedamba - sum of prpe basal area damaged in square meters in square [integer]
-litudamba - sum of litu basal area damaged in square meters in square [integer]
-prsedamba - sum of prse basal area damaged in square meters in square [integer]
-beledamba - sum of bele basal area damaged in square meters in square [integer]
-prpeba - sum of prpe basal area in square meters in square [integer]
-lituba - sum of litu basal area in square meters in square [integer]
-prseba - sum of prse basal area in square meters in square [integer]
-beleba - sum of bele basal area in square meters in square [integer]
-pctprpebadam - percentage of prpeba damaged in square [float]
-pctlitubadam - percentage of lituba damaged in square [float]
-pctprsebadam - percentage of prseba damaged in square [float]
-pctbelebadam - percentage of beleba damaged in square [float]
+trmt - LTSP treatment name [string]<br>
+uniq_square - concatenation of block|plot|square|trmt [string]<br>
+totalba - total basal area in square meters of the square [float]<br>
+damageba - damaged ba in square meters of the square [float]<br>
+pctbadam - percentage of the totalba damaged [float]<br>
+totstems - total number of stems in the square [integer]<br>
+damstems - number of damages stems in the square [integer]<br>
+pctstemdam - percentage of totstems damaged in the square [float]<br>
+sumbent - sum of bent stems in the square [integer]<br>
+sumsnap - sum of snap stems in the square [integer]<br>
+sumtipup - sum of tiput stems in the square [integer]<br>
+pctbent - percentage of damaged stems of damage type bent in the square [float]<br>
+pctsnap - percentage of damaged stems of damage type snap in the square [float]<br>
+pcttipup - percentage of damaged stems of damage type tipup in the square [float]<br>
+sumseverE - sum of stems of damage severity class E (Extensive) in square [integer]<br>
+sumseverM - sum of stems of damage severity class M (Moderate) in square [integer]<br>
+sumseverP - sum of stems of damage severity class P (Prostrate) in square [integer]<br>
+sumseverS - sum of stems of damage severity class S (Severe) in square [integer]<br>
+pctseverE - percentage of damaged stems of damage severity class E (Extensive) in square [float]<br>
+pctseverM - percentage of damaged stems of damage severity class M (Moderate) in square [float]<br>
+pctseverP - percentage of damaged stems of damage severity class P (Prostrate) in square [float]<br>
+pctseverS - percentage of damaged stems of damage severity class S (Severe) in square [float]<br>
+prpestemdam - sum of prpe stems damaged in square [integer]<br>
+litustemdam - sum of litu stems damaged in square [integer]<br>
+prsestemdam - sum of prse stems damaged in square [integer]<br>
+belestemdam - sum of bele stems damaged in square [integer]<br>
+prpestem - sum of prpe stems in square [integer]<br>
+litustem - sum of litu stems in square [integer]<br>
+prsestem - sum of prse stems in square [integer]<br>
+belestem - sum of bele stems in square [integer]<br>
+pctprpedam - percentage of prpestem damaged in square [float]<br>
+pctlitudam - percentage of litustem damaged in square [float]<br>
+pctprsedam - percentage of prsestem damaged in square [float]<br>
+pctbeledam - percentage of belestem damaged in square [float]<br>
+prpedamba - sum of prpe basal area damaged in square meters in square [integer]<br>
+litudamba - sum of litu basal area damaged in square meters in square [integer]<br>
+prsedamba - sum of prse basal area damaged in square meters in square [integer]<br>
+beledamba - sum of bele basal area damaged in square meters in square [integer]<br>
+prpeba - sum of prpe basal area in square meters in square [integer]<br>
+lituba - sum of litu basal area in square meters in square [integer]<br>
+prseba - sum of prse basal area in square meters in square [integer]<br>
+beleba - sum of bele basal area in square meters in square [integer]<br>
+pctprpebadam - percentage of prpeba damaged in square [float]<br>
+pctlitubadam - percentage of lituba damaged in square [float]<br>
+pctprsebadam - percentage of prseba damaged in square [float]<br>
+pctbelebadam - percentage of beleba damaged in square [float]<br>
