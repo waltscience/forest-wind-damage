@@ -4,6 +4,7 @@
 **The analysis follows a two-step process**:
  1. Prepare data using ba.csv and damage.csv in the script Data_prep.R
  2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
+***
 <br>
 
 ### Description
@@ -118,6 +119,8 @@ pctbelebadam - percentage of beleba damaged in square [float]<br>
 #### Field sampling protocol
 
 Additional details and schematics of the field sampling of the forest survey and damage assessment are included in the MS Excel file field_sampling_protocol.xlsx. The file included graphical layouts of the blocks, plots, and squares and details the measurements taken during sampling. 
+
+***
 
 <br>
 
