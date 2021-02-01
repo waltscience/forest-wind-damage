@@ -1,13 +1,12 @@
 # forest-wind-damage
 ### This repository contains the data and analysis for the paper *Nitrogen fertilization increases windstorm damage in an aggrading forest* by Walter et al., in review in the Journal *Forests*.
 
-The analysis follows a two-step process"
+**The analysis follows a two-step process**:
  1. Prepare data using ba.csv and damage.csv in the script Data_prep.R
  2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
-
 <br>
 
-### Detailed description
+### Description
 
 #### Analysis
 ba.csv and damage.csv are the datasheets corresponding to the 2009 forest inventory
@@ -24,6 +23,7 @@ Analysis.R uses the prepped datasheet analysisdata.csv to compute empirical mean
 treatments, and create bootstrapped mean distributions using an 50,000 random samples. The
 empirical means are compared to the boostrapped mean distributions to calculate p-values.
 
+A detailed explanation of the analysis methods is available in the forthcoming paper. *A link to the paper will be placed here once it is published*. 
 
 #### Data
 There are three datasheets in this repository - ba.csv, damage.csv, and analysisdata.csv.
