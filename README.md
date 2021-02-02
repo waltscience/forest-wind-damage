@@ -8,7 +8,7 @@
 
 **The analysis follows a two-step process**:
  1. Prepare data using ba.csv and damage.csv in the script Data_prep.R
- 2. Use prepared data in analysis.csv to perform bootstrap analysis the script Analysis.R
+ 2. Use prepared data in analysis.csv to perform bootstrap analysis in the script Analysis.R
 <br>
 
 ## Description
