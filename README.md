@@ -25,7 +25,7 @@ damage type, and by damage severity. This results in 17 response variables that 
 in the bootstrap analysis. These data are written to analysisdata.csv.
 
 Analysis.R uses the prepped datasheet analysisdata.csv to compute empirical means across
-treatments, and create bootstrapped mean distributions using an 50,000 random samples. The
+treatments, and create bootstrapped mean distributions using 50,000 random samples. The
 empirical means are compared to the boostrapped mean distributions to calculate p-values.
 
 A detailed explanation of the analysis methods is available in the forthcoming paper. *A link to the paper will be placed here once it is published*. 
