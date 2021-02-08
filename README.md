@@ -1,4 +1,6 @@
 # forest-wind-damage
+Data and analysis for Walter et al., 2021 in the journal Forests.
+
 ### This repository contains the data and analysis for the paper *Nitrogen fertilization increases windstorm damage in an aggrading forest* by Walter et al., in review in the journal *Forests*.
 <br>
 
