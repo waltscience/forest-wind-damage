@@ -3,7 +3,7 @@
 ### This repository contains the data and analysis for the paper *Nitrogen fertilization increases windstorm damage in an aggrading forest* by Walter, C.A., Fowler, Z.K., Adams, M.B., Burnham, M.B., McNeil, B.E., and W.T Peterjohn (2021) in the journal *Forests*, 12, 443. Open-access article available at [https://www.mdpi.com/1999-4907/12/4/443](https://www.mdpi.com/1999-4907/12/4/443).
 <br>
 
-### * *This dataset is now archived, accessible, and citeable with a DOI at [Zenodo](https://doi.org/10.5281/zenodo.4487873)*
+### * *This dataset is also archived, accessible, and citeable with a DOI at [Zenodo](https://doi.org/10.5281/zenodo.4487873)*
 <br>
 <br>
 
