@@ -29,7 +29,7 @@ Analysis.R uses the prepped datasheet analysisdata.csv to compute empirical mean
 treatments, and create bootstrapped mean distributions using 50,000 random samples. The
 empirical means are compared to the boostrapped mean distributions to calculate p-values.
 
-A detailed explanation of the analysis methods is available in the forthcoming paper. *A link to the paper will be placed here once it is published*. 
+A detailed explanation of the analysis methods is available in the paper at [https://www.mdpi.com/1999-4907/12/4/443](https://www.mdpi.com/1999-4907/12/4/443). 
 
 ### Data
 There are three datasheets in this repository - ba.csv, damage.csv, and analysisdata.csv.
